@@ -6,21 +6,61 @@
     <title>My Portfolio</title>
 </head>
 <body>
-       <header><h1>Qalbi's Portfolio</h1></header>
 
-        <!--We style/customize  our navigation   -->
 <style>
+        .full-screen-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;}
+
+     body {
+            background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;}
+
+        header{ 
+            display: flex;
+            justify-content: center;
+            font-style: italic; }
+
+            nav {
+            display: flex;
+            justify-content: center;
+            margin-top: -10px; }
+        
         nav a {
-            margin-left: 5px; /* Add space between links */
-            margin-right: 5px;
+            font-size: large;
+            margin-left: 10px; 
+            margin-right: 10px;
             text-decoration: none;
             color: #000;
-        }
-        nav a:hover {
-            color: #007BFF;
-        }
-    </style>
+            font-style: oblique; }
 
+        nav a:hover {
+            color: #0a74e6; }
+
+    h1{
+        display: flex;
+        justify-content: center;}
+
+    section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(25, 24, 24, 0.854);}
+
+</style>
+
+
+    <div class="full-screen-section" >
+<header><h1 id="home">Qalbi's Portfolio</h1></header>
       <nav>
      <a href="#about">About me</a>
     <a href="#Education">Education</a>
@@ -29,28 +69,32 @@
     <a href="#contact">Contact</a> 
     </ul>
 </nav>
+    </div>
 
-<section id="about">
-<h2>About Me:</h2> 
+
+<section  id="about">
+<h1>About Me</h1> 
 <p>
-    <p><b><i>Muhammad Ahsan Qalbi.</i></b>I am currently enhancing my skills in CSS and have a strong interest in web development. I am focused on building responsive and user-friendly websites. My goal is to continuously learn and contribute to innovative web projects</p>
+    <p><b><i>Muhammad Ahsan Qalbi.</i></b>I am currently enhancing my skills in HTML, CSS, and JavaScript, with a strong passion for web development. My focus is on creating responsive and user-friendly websites. I am committed to continuously learning and contributing to innovative web projects.</p>
 </p>
 </section>
 
 
-<section id="Education">
-    <h2>Education:</h2>
+<section 
+ id="Education">
+    <h1>Education</h1>
     <ul>
-        <li>Matric From High School</li>
-        <li>Intermediate From Punjab College</li>
+        <li>Matric--->2017-2019</li>
+        <li>Intermediate--->2017-2021</li>
         <li>CS Student at IUB</li>
         <b>For More Information <button>Download CV</button></b>
     </ul>
 </section>
 
 
-<section id="Skills">
-    <h2>Skills:</h2>
+<section 
+id="Skills">
+    <h1>Skills</h1>
     <ul>
         <li>C++</li>
         <li>Java </li>
@@ -61,8 +105,9 @@
 </section>
 
 
-<section id="projects">
-    <h2>Projects</h2>
+<section
+id="projects">
+    <h1>Projects</h1>
        <h3>Project 1: Cafe Order</h3>
 <p>In this project I practice the python fundamentals in a easy way so I understand all concepts.</p>
 <a 
@@ -76,8 +121,9 @@ href="https://github.com/QalbeAhsan/PYTHON_COURSE/blob/a540670ee0fc2c1ec1ee342f0
 </a>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
+<section 
+ id="contact">
+    <h1>Contact</h1>
     <p>If you'd like to get in touch, feel free to reach out to me through the following channels:</p>
     <ul>
         <li><a href="mailto:ahsanqalbi13@gmail.com">Email</a></li><br>
@@ -87,7 +133,7 @@ href="https://github.com/QalbeAhsan/PYTHON_COURSE/blob/a540670ee0fc2c1ec1ee342f0
 
 
 <section>
-<h2>Frequently Asked Questions:</h2>
+<h1>Frequently Asked Questions:</h1>
 <details>
     <summary>What is your opinion about CS?</summary><p>I found it very interesting and conceptual.</p>
 </details>
@@ -102,7 +148,8 @@ href="https://github.com/QalbeAhsan/PYTHON_COURSE/blob/a540670ee0fc2c1ec1ee342f0
 </details>
 </section>
 
-
+<nav><button style="background-color: #c7d7f6;"><a href="#home">Go To Homepage</a></button></nav>
+   
 <footer>
     <p>
         &copy;Ahsan Qalbi.All Rights Reserved 
