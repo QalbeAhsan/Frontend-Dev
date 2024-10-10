@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Travel World</title>
+</head>
+
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+header{
+height: 95vh;
+background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)) ,url('../Img/world.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* 
+.navbar h1{
+display: inline-block;
+padding-right: 40%;
+letter-spacing: 0.1em;
+ border: 2px solid white;
+} */
+
+.navbar{
+text-align: right;
+margin-right: 40px;
+padding-top: 30px;
+/* border: 2px solid white; */
+}
+
+.navbar li{
+display: inline;
+padding-right: 20px;
+/* border: 2px solid rgb(218, 22, 22);     */
+}
+
+.navbar a {
+text-decoration: none;
+color: aliceblue;
+}
+
+.navbar a:hover {
+border-bottom: solid 1px aliceblue;
+}
+
+.para{
+text-align: center;
+margin-top: 200px;
+/* border: 2px solid white; */
+}
+
+.para p{
+margin-top: 20px;
+/* border: 2px solid white; */
+}
+
+.para a{
+display: inline-block;
+text-decoration: none;
+margin-top: 20px;
+padding: 7px 10px;
+color: black;
+background-color: #fff;
+border: solid 2px #000;
+border-radius: 30px;
+}
+
+.para a:hover{background-color: #ddd;
+}
+
+.showcase{
+height: 900px;
+color: black;
+background-color: #ddd;
+padding: 2rem 0;
+/* border: solid rgb(12, 190, 6) 5px; */
+}
+
+.container{
+max-width: 1200px;
+width: 80%;
+margin: 0 auto;
+/* border: 3px red solid; */
+}
+.row1,.row2{
+height: 300px;
+/* border: solid red 2px; */
+box-shadow: 10px 10px 10px 10px #aaa;
+}
+
+.row1{margin-bottom: 50px;
+
+}
+
+.row1 .imagebox,.row2 .textbox{
+float: left;
+/* border: 2px solid black; */
+width: 50%;
+height: 100%;
+}
+
+.row1 .textbox,.row2 .imagebox{
+float: right;
+/* border: 2px solid black; */
+width: 50%;
+height: 100%;
+}
+
+.row1 .imagebox img,.row2 .imagebox img{
+height: 100%;
+width: 100%;
+}
+
+.row1 .textbox, .row2 .textbox{
+padding:90px 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: white;
+}
+
+.heading{
+font-family: italic;
+letter-spacing: 2px;
+padding-bottom: 15px;
+}
+
+.button1 {
+color: red;
+text-decoration: none;
+display: inline-block;
+border: 2px red solid;
+border-radius: 20px;
+padding: 4px 15px;
+margin-top: 20px;
+}
+
+.button1:hover{
+background-color:#ddd
+}
+
+ .features{
+    height: 400px;
+    padding-top: 110px;
+    padding-left: 25%;
+    /* border: #000 2px solid; */
+}
+
+.boxes{
+    max-width: 1200px;
+    width: 70%;
+    /* border: 3px rgb(19, 11, 2) solid; */
+}
+.clearfix{
+    clear: both;
+}
+
+.box{
+    padding: 10px;
+    height: 170px;
+    width: 33%;
+    float: left;
+    box-shadow: 5px 5px 5px 0px #d4d1d1;
+}
+
+.box1,.box3{
+    color: #fff;
+    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 88.6% );
+}
+
+.box2{
+    color: #000;
+    background-image: linear-gradient( 68.6deg,  rgba(79,183,131,1) 14.4%, rgba(254,235,151,1) 92.7% );;
+}
+
+i{
+    padding-left: 80px;
+}
+
+.box1 i,.box3 i{
+    color: rgba(208, 192, 192, 0.902);
+}
+
+.h3{
+    font-family: bold,;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.paraf{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* line-height: 1.em; */
+}
+
+.sociallinks i{
+    display: inline-block;
+    padding-left: 1px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.footersection{
+    text-align: center;
+    padding-top: 40px;
+    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 10%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 1200% );
+    padding-bottom:30px;
+}
+
+</style>
+   
+<!-- ##################### STARTING HTML CODE  ####################################### -->
+
+<body>
+<header>
+    <nav class="navbar">
+        <div>
+                <ul>
+                    <!-- <li> <h1><i>Travel World</i></h1></li> -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+        </div>
+    </nav>
+
+ <div class="para">
+        <p><h2 style="letter-spacing: 0.1em; text-transform: uppercase;">Explore The World</h1></p> 
+        <p style="letter-spacing: 0.09em;">It's Only The Way To Broaden Your Mind And To Experience The Greatness</p>
+        <a href="#explore">Begin's Journey</a>
+</div>    
+</header>
+
+
+<section class="showcase" id="explore">
+    <div class="container">
+
+        <!-- HERE WE CUSTOMIZE OUR ROW 1 -->
+        <div class="row1">
+            <div class="imagebox"><img src="../Img/uk.jpg.jpg" alt="United Kingdom"></div>
+            <div class="textbox">
+                <h2 class="heading">UNITED KINGDOM , UK</h2>
+                <p>
+                    The United Kingdom (UK), made up of England, Scotland, Wales, and Northern Ireland, is a country rich in history and cultural diversity.
+                </p>
+                <a href="#more" class="button1">More</a>
+            </div>
+        </div>
+
+    <!-- here we customize our row 2 -->
+        <div class="row2">
+           
+            <div class="textbox">
+                <h2 class="heading">UNITED ARAB EMIRATES,UAE</h2>
+                <p>
+                    The United Arab Emirates (UAE) is made up of seven emirates, and each emirate has its own main city.Each of its cities is capital of its respective emirate.
+                </p>
+                <a href="#more" class="button1">More</a>
+            </div>
+
+            <div class="imagebox"><img src="../Img/uae.jpg" alt="UAE"></div>
+        </div>
+    </div>
+</section>
+
+
+<!--  SECTION CLASS FEATURES -->
+<section style="color: #000;" class="features">
+    <div class="boxes">
+        <div class="box box1">
+            <i class="fa-solid fa-route fa-1x"></i>
+        <h3 class="h3">Adventure</h3>
+        <p class="paraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, et!</p>
+             
+        </div>
+
+        <div class="box box2">
+            <i class="fa-solid fa-dollar-sign fa-1x"></i>
+          <h3 class="h3">Less Price</h3>
+          <p class="paraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, laborum!</p>
+        </div>
+
+        <div class="box box3">
+            <i class="fa-solid fa-user-check fa-1x"></i>
+           <h3 class="h3">Experiance</h3>
+           <p class="paraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, laboriosam?</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<!-- STARTING THE FOOTER SECTION -->
+<footer class="footersection">
+    <div class="sociallinks">
+        <i class="fa-brands fa-facebook fa-2x"  style="color: blue;" ></i>
+        <i class="fa-brands fa-instagram fa-2x" style="color: #e9430c;"></i>
+        <i class="fa-brands fa-github fa-2x" style="color: #2c1c5f;"></i>
+    </div>
+    <p style="color: #000;">Travel World &copy; 2024, All Rights Reserved</p>
+</footer>
+
+    
+</body>
+</html>
