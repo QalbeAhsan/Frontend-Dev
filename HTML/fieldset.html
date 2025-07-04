@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Multiple Fieldsets</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="/submit" method="post">
+        <!-- Personal Information Fieldset -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <br>
+
+        <!-- Contact Information Fieldset -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com">
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        </fieldset>
+
+        <br>
+
+        <!-- Account Information Fieldset -->
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

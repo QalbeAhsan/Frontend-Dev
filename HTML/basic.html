@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <style>
+      .divs {
+        height: 95vh;
+        border: black 3px solid;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+
+      .divs div {
+        width: 10%;
+      }
+
+      @media (max-width: 1200px) {
+        .divs {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <div class="divs">
+      <div style="background-color: aqua; order: 3">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+      <div style="background-color: blue">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+      <div style="background-color: green">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+      <div style="background-color: blueviolet">
+        <h2>Lorem ipsum dolor</h2>
+      </div>
+    </div>
+
+    <!-- <h2>HTML Image</h2>
+<img src="/images/picture.jpg" alt="Trulli" width="500" height="333">
+<iframe width="200" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe> -->
+  </body>
+</html>
